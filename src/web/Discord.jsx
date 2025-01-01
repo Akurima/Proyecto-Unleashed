@@ -28,7 +28,7 @@ function Discord() {
             <video
               ref={videoRef}
               className="video-discord"
-              src="./public/video_discord.mp4"
+              src="./public/imagenes/video_discord.mp4"
               preload="auto"
               autoPlay
               muted
