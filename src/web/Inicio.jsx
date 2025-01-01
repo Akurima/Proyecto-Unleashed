@@ -71,7 +71,7 @@ function App() {
             </p>
             <img
               className="imagen-info"
-              src="./public/imagenes/ul-naruto.jpg"
+              src="imagenes/ul-naruto.jpg"
               alt="Imagen Changelogs"
             />
             <p className="texto-seccion texto-servidor">
