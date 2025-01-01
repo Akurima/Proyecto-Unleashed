@@ -5,11 +5,7 @@ function Header() {
     <>
       <header>
         <nav className="navbar">
-          <img
-            src="../public/imagenes/logito.png"
-            alt="Logo"
-            className="logo"
-          />
+          <img src="/imagenes/logito.png" alt="Logo" className="logo" />
           <ul className="ul-nav">
             <Link to="/">
               <li className="nav-item">
