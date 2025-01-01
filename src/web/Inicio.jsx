@@ -109,7 +109,7 @@ function App() {
             </p>
             <img
               className="imagen-changelogs"
-              src="https://media.discordapp.net/attachments/1197225431405973576/1323140905376677968/image.png?ex=677568be&is=6774173e&hm=c5ce76c2164f554a566f7fc9d1e3993c6475720d52561c87954a5b4f900e08f3&=&format=webp&quality=lossless"
+              src="https://media.discordapp.net/attachments/1197225431405973576/1323140905376677968/image.png?ex=6776ba3e&is=677568be&hm=3de6ab4a3c5cb832944ff0424ad6f5be3d868ae6134f7244da0926052c9b7cb9&=&format=webp&quality=lossless"
               alt="Imagen Changelogs"
             />
             <button className="btn btn-light">Ver todos los cambios</button>
