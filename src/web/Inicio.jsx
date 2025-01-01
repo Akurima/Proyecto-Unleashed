@@ -25,43 +25,49 @@ function App() {
             </p>
 
             <p className="texto-seccion texto-servidor">
-              🌌 <u style={{ color: "red" }}> Cinco Grandes Aldeas</u>: Explora
-              y elige tu camino en Konoha, Suna, Iwa o Kumo. Cada aldea tiene su
-              propio estilo, misiones y secretos por descubrir.
+              ◻️ Cinco Grandes Aldeas ◻️ <br /> ◽ Explora y elige tu camino en
+              Konoha, Suna, Iwa o Kumo. Cada aldea tiene su propio estilo,
+              misiones y secretos por descubrir.
               <br />
-              <br /> 🔥<u style={{ color: "red" }}> Sistema de Jutsus</u>:
-              Aprende y domina poderosas técnicas ninjas como el Rasengan,
-              Chidori, jutsus elementales y muchas más. ¡Cada jutsu tiene sus
-              propias animaciones y efectos especiales!
               <br />
-              <br /> 🌀 <u style={{ color: "red" }}> Clanes y Kekkei Genkai</u>:
-              Forma parte de clanes legendarios como Uchiha, Hyūga, o Senju.
-              Desbloquea habilidades únicas que te harán destacar en combate.
+              ◻️ Sistema de Jutsus ◻️
+              <br /> ◽ Aprende y domina poderosas técnicas ninjas como el
+              Rasengan, Chidori, jutsus elementales y muchas más. ¡Cada jutsu
+              tiene sus propias animaciones y efectos especiales!
               <br />
-              <br /> ⚔️ <u style={{ color: "red" }}></u> Armas Ninjas
-              <u />: Equípate con kunais, shurikens, espadas legendarias y
+              <br /> ◻️ Clanes y Kekkei Genkai ◻️
+              <br /> ◽ Forma parte de clanes legendarios como Uchiha, Hyūga, o
+              Senju. Desbloquea habilidades únicas que te harán destacar en
+              combate.
+              <br />
+              <br />
+              ◻️ Armas Ninjas ◻️
+              <br /> ◽ Equípate con kunais, shurikens, espadas legendarias y
               herramientas ninja personalizadas para enfrentar a tus enemigos o
               completar misiones.
               <br />
               <br />
-              🌍 <u style={{ color: "red" }}></u> Mundo Abierto Personalizado
-              <u />: Descubre un mapa fiel al universo de Naruto, lleno de
-              misiones, NPCs, y lugares icónicos como el Valle del Fin o el
-              Monte Myōboku.
+              ◻️ Mundo Abierto Personalizado ◻️
               <br />
-              <br /> 👥 <u style={{ color: "red" }}></u> Sistema de Guerra entre
-              Aldeas
-              <u />: Participa en emocionantes batallas PvP entre aldeas para
+              ◽ Descubre un mapa fiel al universo de Naruto, lleno de misiones,
+              NPCs, y lugares icónicos como el Valle del Fin o el Monte Myōboku.
+              <br />
+              <br />
+              ◻️ Sistema de Guerra entre Aldeas ◻️
+              <br />
+              ◽ Participa en emocionantes batallas PvP entre aldeas para
               defender tu territorio o conquistar nuevas zonas estratégicas.
               <br />
-              <br /> 📜 <u style={{ color: "red" }}></u> Misiones y Progresión
-              <u />: Completa misiones personalizadas para avanzar en tu rango
+              <br />
+              ◻️ Misiones y Progresión ◻️
+              <br />
+              ◽ Completa misiones personalizadas para avanzar en tu rango
               ninja, desde estudiante hasta Hokage. ¡Tu dedicación definirá tu
               legado!
               <br />
-              <br /> 🎭 <u style={{ color: "red" }}></u> Eventos Especiales
-              <u />: Participa en torneos de chunin, invasiones Akatsuki y otras
-              actividades temáticas con recompensas exclusivas.
+              <br /> ◻️ Eventos Especiales ◻️
+              <br />◽ Participa en torneos de chunin, invasiones Akatsuki y
+              otras actividades temáticas con recompensas exclusivas.
             </p>
             <img
               className="imagen-info"
