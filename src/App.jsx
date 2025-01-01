@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Inicio from "./web/Inicio";
 import Wiki from "./web/Wiki";
 import Reglas from "./web/Reglas";
-import Tienda from "./web/tienda";
+import Tienda from "./web/Tienda";
 import Discord from "./web/Discord";
 
 function App() {
