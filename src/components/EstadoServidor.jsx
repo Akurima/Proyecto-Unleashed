@@ -41,7 +41,7 @@ const EstadoServidor = () => {
   return (
     <div className="server-status texto-seccion">
       El servidor se encuentra:{" "}
-      <span className="server-online">{estadoServidor}</span>
+      <span className="server-online servidor-titulo">{estadoServidor}</span>
       <img
         className="logito-estado"
         src="https://pa1.aminoapps.com/6488/d90e2b3a2022b7e1fce96ba71b9e02e56e986577_hq.gif"

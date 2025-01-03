@@ -9,7 +9,7 @@ function Temporada() {
       </div>
 
       <section className="container contenedor-temporada">
-        <div>
+        <div className="contenedor-texto">
           <h3 className="texto-servidor texto-seccion">
             Sección en Mantenimiento
           </h3>

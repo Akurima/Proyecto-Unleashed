@@ -61,7 +61,9 @@ function Eventos() {
       </div>
       <section className="container contenedor-eventos">
         <div className="eventos">
-          <h2 className="texto-seccion servidor-titulo">Eventos</h2>
+          <h2 className="texto-servidor texto-seccion servidor-titulo">
+            Eventos
+          </h2>
           <p className="texto-seccion servidor-titulo">
             {eventInfo.mensaje} <br /> {eventInfo.mensaje2}
           </p>

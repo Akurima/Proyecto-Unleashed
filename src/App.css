@@ -317,7 +317,9 @@ footer a:hover {
 .texto-seccion {
   font-family: "Bungee Spice", serif;
   width: 400px;
-  color: #feca00;
+  color: #ffffff; /* Cambiado a blanco puro */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8),
+    /* Sombra negra suave */ 0px 0px 10px rgba(255, 255, 255, 0.5); /* Efecto de resplandor blanco */
   z-index: 1;
   position: relative;
 }
@@ -325,8 +327,10 @@ footer a:hover {
 .texto-inicio {
   font-family: "Fruktur", serif;
   width: 400px;
-  color: #fd8412;
+  color: #ffcc66; /* Amarillo pastel más claro */
   font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+    /* Sombra negra */ 0px 0px 8px rgba(255, 204, 102, 0.6); /* Resplandor del mismo color */
   z-index: 1;
   position: relative;
 }
@@ -448,31 +452,32 @@ footer a:hover {
 
 .contenedor-reglamento {
   text-align: center;
-  padding: 8px 8px;
+  padding: 16px; /* Aumento de padding para mayor separación */
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: 1000px;
+  height: 930px;
   width: 640px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 2%;
+  border: 2px solid #fd8412; /* Bordes visibles */
+  border-radius: 10px; /* Bordes redondeados */
   position: relative;
-  margin-top: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px auto; /* Centrado y margen superior */
+  background: linear-gradient(145deg, #222, #333); /* Fondo con degradado */
   opacity: 0;
   transform: translateY(20px);
-  animation: slideIn 0.6s ease-out forwards;
+  animation: slideIn 0.6s ease-out forwards; /* Animación de entrada */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
   flex-grow: 1;
 }
 
 .contenedor-reglamento:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Sombra al pasar el cursor */
+  transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
 }
 
+/* Fondo oscuro interno y borde redondeado */
 .contenedor-reglamento::before {
   content: "";
   position: absolute;
@@ -481,49 +486,81 @@ footer a:hover {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
+  border-radius: 10px; /* Bordes redondeados */
   z-index: -2;
   pointer-events: none;
 }
 
+/* Fondo con borde secundario */
 .contenedor-reglamento::after {
   content: "";
   position: absolute;
-  top: 1%;
-  left: 1%;
-  right: 1%;
-  bottom: 1%;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
   background: rgba(83, 82, 82, 0.4);
-  border-radius: 30px;
+  border-radius: 10px; /* Bordes redondeados */
   z-index: -1;
   pointer-events: none;
 }
 
+/* Estilo del reglamento */
 .reglamento {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 10px;
+  gap: 20px;
+  text-align: center;
 }
 
 .reglamento-titulo {
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 20px;
+  font-size: 1.8rem;
   font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: #feca00; /* Color dorado para destacar */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Sombra para hacer el texto más visible */
+  border-bottom: 2px solid #fd8412; /* Línea debajo del título */
+  padding-bottom: 8px;
 }
 
 .reglas {
   width: 100%;
   text-align: left;
-  padding: 0 8px;
+  padding: 16px;
   font-size: 17px;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 8px 0;
+  border: 1px solid #fd8412;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reglas:hover {
+  background: rgba(255, 132, 18, 0.1); /* Resaltado suave */
+  box-shadow: 0 5px 10px rgba(255, 132, 18, 0.3); /* Efecto de sombra */
 }
 
 .reglas p {
   margin: 0;
   width: 100%;
   text-align: left;
+}
+
+/* Efecto animado de aparición */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contenedor-general {
@@ -536,27 +573,28 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 8px 8px;
+  padding: 16px; /* Aumento de padding para mayor separación */
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: auto;
+  height: 1620px;
   width: 100%;
-  border-radius: 2%;
+  border: 2px solid #fd8412; /* Bordes visibles */
+  border-radius: 10px; /* Bordes redondeados */
   position: relative;
-  margin-top: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px auto; /* Centrado y margen superior */
+  background: linear-gradient(145deg, #222, #333); /* Fondo con degradado */
   opacity: 0;
   transform: translateY(20px);
-  animation: slideIn 0.6s ease-out forwards;
+  animation: slideIn 0.6s ease-out forwards; /* Animación de entrada */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
 }
 
 .contenedor-servidor:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Sombra al pasar el cursor */
+  transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
 }
 
+/* Fondo oscuro interno y borde redondeado */
 .contenedor-servidor::before {
   content: "";
   position: absolute;
@@ -564,70 +602,97 @@ footer a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px; /* Bordes redondeados */
   z-index: -2;
   pointer-events: none;
 }
 
+/* Fondo con borde secundario */
 .contenedor-servidor::after {
   content: "";
   position: absolute;
-  top: 1%;
-  left: 1%;
-  right: 1%;
-  bottom: 1%;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
   background: rgba(83, 82, 82, 0.4);
-  border-radius: 30px;
+  border-radius: 10px; /* Bordes redondeados */
   z-index: -1;
   pointer-events: none;
 }
 
+/* Estilo para las imágenes */
 .imagen-info {
   margin-bottom: 25px;
-  width: 98%;
+  width: 95%;
   height: 900px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: 10% 35%;
+  border-radius: 10px; /* Bordes redondeados */
+  object-fit: cover; /* Asegura que la imagen cubra el área */
+  object-position: 10% 35%; /* Posición de la imagen dentro del contenedor */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Títulos */
 .servidor-titulo {
   margin: 20px 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: #feca00;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   text-align: center;
-  width: 100%;
+  width: 95%;
+  border-bottom: 2px solid #fd8412;
+  padding-bottom: 8px;
 }
 
-.texto-servidor {
-  text-align: center;
-  width: 100%;
-  padding: 0 16px;
-  margin: 8px 0;
-}
-
+/* Texto dentro del contenedor */
+.texto-servidor,
 .texto-servidor1 {
   text-align: center;
-  width: 100%;
-  padding: 0 16px;
+  width: 95%;
+  padding: 16px;
   margin: 8px 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  border: 1px solid #fd8412;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+.texto-servidor:hover,
+.texto-servidor1:hover {
+  background: rgba(255, 132, 18, 0.1); /* Resaltado suave */
+  box-shadow: 0 5px 10px rgba(255, 132, 18, 0.3); /* Efecto de sombra */
+}
+
+/* Efecto animado de aparición */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo principal para el contenedor de changelogs */
 .contenedor-changelogs {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Mejor organización vertical */
   align-items: center;
   text-align: center;
-  padding: 8px 8px;
+  padding: 16px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: 850px;
-  width: 1000px;
-  border-radius: 2%;
+  height: 1000px;
+  width: 920px;
+  border: 2px solid #fd8412; /* Bordes visibles */
+  border-radius: 10px;
   position: relative;
-  margin-top: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px auto;
+  background: linear-gradient(145deg, #222, #333);
   opacity: 0;
   transform: translateY(20px);
   animation: slideIn 0.6s ease-out forwards;
@@ -635,11 +700,17 @@ footer a:hover {
   z-index: 1;
 }
 
+.contenedor-texto-changelogs {
+  display: flex;
+  justify-content: center;
+}
+
 .contenedor-changelogs:hover {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
   transform: translateY(-5px);
 }
 
+/* Fondo interno oscuro y borde en el contenedor principal */
 .contenedor-changelogs::before {
   content: "";
   position: absolute;
@@ -648,7 +719,7 @@ footer a:hover {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
+  border-radius: 10px;
   z-index: -2;
   pointer-events: none;
 }
@@ -656,35 +727,80 @@ footer a:hover {
 .contenedor-changelogs::after {
   content: "";
   position: absolute;
-  top: 1%;
-  left: 1%;
-  right: 1%;
-  bottom: 1%;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
   background: rgba(83, 82, 82, 0.4);
-  border-radius: 30px;
+  border-radius: 10px;
   z-index: -1;
   pointer-events: none;
 }
 
+/* Separadores internos entre secciones */
+.separador {
+  width: 85%;
+  height: 2px;
+  background: #fd8412; /* Línea visible */
+  margin: 16px auto;
+  border-radius: 2px;
+}
+
+/* Estilo para las imágenes */
 .imagen-changelogs {
   margin-bottom: 25px;
   width: 90%;
   border-radius: 10px;
+  border: 2px solid #fd8412; /* Agrega bordes a las imágenes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.imagen-changelogs:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Título de los changelogs */
 .changelogs-titulo {
   margin: 20px 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: #feca00;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   text-align: center;
-  width: 100%;
+  width: 90%;
+  border-bottom: 2px solid #fd8412;
+  padding-bottom: 8px;
 }
 
+/* Texto interno */
 .texto-changelogs {
   text-align: left;
-  width: 100%;
-  padding: 0 16px;
-  margin: 8px 0;
+  width: 90%;
+  padding: 16px;
+  margin: 16px 0;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fd8412;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Efectos al pasar el cursor por los textos */
+.texto-changelogs:hover {
+  background: rgba(255, 132, 18, 0.1); /* Suavemente resaltado */
+  box-shadow: 0 5px 10px rgba(255, 132, 18, 0.3);
+}
+
+/* Efecto animado de aparición */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contenedor-inicio {
@@ -692,27 +808,28 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 8px 8px;
+  padding: 16px; /* Aumento del padding para mayor separación */
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
   height: 385px;
   width: 940px;
-  border-radius: 2%;
+  border: 2px solid #fd8412; /* Bordes visibles */
+  border-radius: 10px; /* Bordes redondeados */
   position: relative;
-  margin-top: 8px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px auto; /* Centrado y margen superior */
+  background: linear-gradient(145deg, #222, #333); /* Fondo con degradado */
   opacity: 0;
   transform: translateY(20px);
-  animation: slideIn 0.6s ease-out forwards;
+  animation: slideIn 0.6s ease-out forwards; /* Animación de entrada */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
 }
 
 .contenedor-inicio:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Sombra al pasar el cursor */
+  transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
 }
 
+/* Fondo oscuro interno y borde redondeado */
 .contenedor-inicio::before {
   content: "";
   position: absolute;
@@ -721,26 +838,49 @@ footer a:hover {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
+  border-radius: 10px; /* Bordes redondeados */
   z-index: -2;
   pointer-events: none;
 }
 
+/* Fondo con borde secundario */
 .contenedor-inicio::after {
   content: "";
   position: absolute;
-  top: 1%;
-  left: 1%;
-  right: 1%;
-  bottom: 1%;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
   background: rgba(83, 82, 82, 0.4);
-  border-radius: 30px;
+  border-radius: 10px; /* Bordes redondeados */
   z-index: -1;
   pointer-events: none;
 }
 
+/* Estilo para el iframe */
 .frame-inicio {
   margin: 8px;
+  width: 98%;
+  height: 98%;
+  border-radius: 30px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos al pasar el cursor */
+}
+
+.frame-inicio:hover {
+  transform: scale(1.05); /* Efecto de zoom */
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Sombra al pasar el cursor */
+}
+
+/* Efecto animado de aparición */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .seccion-discord {
@@ -765,7 +905,7 @@ footer a:hover {
 .contenedor-discord {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   width: 100%;
@@ -817,25 +957,44 @@ footer a:hover {
   align-items: center;
 }
 
+/* Estilo del video */
 .video-discord {
   border-radius: 20px;
   width: 400px;
   height: 380px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efecto de hover en el video */
+.video-discord:hover {
+  transform: scale(1.05); /* Aumento del tamaño del video */
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+/* Efecto animado de aparición */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .contenedor-estado {
   text-align: center;
-  padding: 8px 8px;
+  padding: 16px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: 450px;
+  height: 575px;
   width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 30px;
   position: relative;
-  gap: 8px;
+  gap: 16px;
   margin-top: 8px;
   opacity: 0;
   transform: translateY(20px);
@@ -879,13 +1038,26 @@ footer a:hover {
   width: 500px;
   height: auto;
   border-radius: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contenedor-eventos {
   text-align: center;
   padding: 8px 8px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: 450px;
+  height: 545px;
   width: 650px;
   display: flex;
   flex-direction: column;
@@ -934,13 +1106,14 @@ footer a:hover {
 
 .imagen-evento {
   border-radius: 10px;
+  margin-bottom: 8px;
 }
 
 .contenedor-temporada {
   text-align: center;
   padding: 8px 8px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: 500px;
+  height: 540px;
   width: 900px;
   display: flex;
   flex-direction: column;
@@ -991,4 +1164,11 @@ footer a:hover {
   width: 700px;
   object-fit: contain;
   border-radius: 20px;
+}
+
+.contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

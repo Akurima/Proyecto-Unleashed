@@ -23,8 +23,10 @@ function Reglas() {
             <br />
             <br /> 4- Prohibido la Auto-Promoción: No promociones servicios o
             productos sin la aprobación de los administradores.
-            <br /> 5- No des Spoilers sin Aviso: Si compartes información que
-            podría considerarse un spoiler, asegúrate de advertirlo claramente.
+            <br />
+            <br />
+            5- No des Spoilers sin Aviso: Si compartes información que podría
+            considerarse un spoiler, asegúrate de advertirlo claramente.
             <br />
             <br /> 6- Sin Contenido NSFW: No compartas contenido para adultos o
             inapropiado. Mantenlo amigable para todas las edades. <br />
@@ -54,9 +56,7 @@ function Reglas() {
             <br /> 2- Prohibido el Uso de Hacks o Cheats o Mecanicas que den
             ventajas: No utilices modificaciones no autorizadas o mecanicas del
             propio juego que otorguen ventajas injustas o adulteren algún
-            sistema dentro del servidor. (Por ejemplo, utilizar bugs del juego
-            para picar automaticamente el bloque de enfrente, causando un afk
-            farm) <br />
+            sistema dentro del servidor. <br />
             <br />
             3- No Spam o Publicidad: Evita el spam en el chat y no promociones
             otros servidores sin permiso. <br />

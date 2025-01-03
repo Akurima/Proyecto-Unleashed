@@ -9,8 +9,10 @@ function Estado() {
         <Header />
       </div>
       <div className="contenedor-estado container">
-        <h2 className="texto-seccion">Estado del Servidor</h2>
-        <EstadoServidor />
+        <h2 className="texto-servidor texto-seccion servidor-titulo">
+          Estado del Servidor
+        </h2>
+        <EstadoServidor/>
       </div>
       <Footer />
     </>
