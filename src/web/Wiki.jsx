@@ -5,7 +5,9 @@ import Seccion from "../components/Seccion";
 function Wiki() {
   return (
     <>
-      <Header />
+      <div className="container">
+        <Header />
+      </div>
       <div className="container">
         <Seccion
           link="https://i.pinimg.com/736x/73/85/c4/7385c4599f0401844310ec76d983d4d1.jpg"

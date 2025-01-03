@@ -43,6 +43,30 @@ function Header() {
                 <span className="nav-text">Tienda</span>
               </li>
             </Link>
+            <Link to="/Temporada">
+              {" "}
+              <li className="nav-item">
+                <div className="background-dark"></div>
+                <div className="background-transparent"></div>
+                <span className="nav-text">Temporada</span>
+              </li>
+            </Link>
+            <Link to="/Eventos">
+              {" "}
+              <li className="nav-item">
+                <div className="background-dark"></div>
+                <div className="background-transparent"></div>
+                <span className="nav-text">Eventos</span>
+              </li>
+            </Link>
+            <Link to="/Estado">
+              {" "}
+              <li className="nav-item">
+                <div className="background-dark"></div>
+                <div className="background-transparent"></div>
+                <span className="nav-text">Estado</span>
+              </li>
+            </Link>
           </ul>
         </nav>
       </header>

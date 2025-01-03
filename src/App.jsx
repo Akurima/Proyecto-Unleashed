@@ -5,6 +5,9 @@ import Wiki from "./web/Wiki";
 import Reglas from "./web/Reglas";
 import Tienda from "./web/Tienda";
 import Discord from "./web/Discord";
+import Temporada from "./web/Temporada";
+import Eventos from "./web/Eventos";
+import Estado from "./web/Estado";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +30,18 @@ function App() {
     {
       path: "/Tienda",
       element: <Tienda />,
+    },
+    {
+      path: "/Temporada",
+      element: <Temporada />,
+    },
+    {
+      path: "/Eventos",
+      element: <Eventos />,
+    },
+    {
+      path: "/Estado",
+      element: <Estado />,
     },
   ]);
   return <RouterProvider router={router} />;

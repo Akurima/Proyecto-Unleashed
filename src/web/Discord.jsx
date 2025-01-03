@@ -15,14 +15,22 @@ function Discord() {
 
   return (
     <>
-      <Header />
-      <section className="seccion-discord">
+      <div className="container">
+        <Header />
+      </div>
+      <section className="seccion-discord container">
         <div className="contenedor-discord">
           <div className="texto-seccion">
             <h3 className="texto-servidor">
               ¡Ingresa ahora a nuestra comunidad de Discord!
             </h3>
-            <button className="btn btn-light">¡Ingresar!</button>
+            <a
+              href="https://discord.gg/QGTq2DFF8r"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn btn-light">¡Ingresar!</button>
+            </a>
           </div>
           <div className="video-container">
             <video

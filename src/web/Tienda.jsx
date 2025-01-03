@@ -3,8 +3,10 @@ import Footer from "../components/Footer";
 function Tienda() {
   return (
     <>
-      <Header />
-      <div className="container relleno">
+      <div className="container">
+        <Header />
+      </div>
+      <div className="container">
         <div className="contenedor-cartas">
           <article className="contenedor-carta">
             <img
@@ -14,10 +16,9 @@ function Tienda() {
             />
             <h2 className="texto-seccion">Jades</h2>
 
-            <p className="texto-seccion">
+            <p className="texto-inicio">
               Los jades es la moneda principal dentro del servidor, con la cual
-              podrás canjear en el spawn (Con Tsunade Senju) por distintos
-              productos, tales como:
+              podrás canjear distintos productos.
             </p>
             <h6 className="texto-seccion">
               Oferta 1:{" "}
@@ -44,14 +45,14 @@ function Tienda() {
             />
             <h2 className="texto-seccion">Pase de Batalla: Premium</h2>
 
-            <p className="texto-seccion">
+            <p className="texto-inicio">
               Con este producto, obtendrás la versión premium del pase de
               batalla.
             </p>
             <h6 className="texto-seccion">
-              Basico:{" "}
+              PRECIO:{" "}
               <h5>
-                <u>1 Mes - 200 Jades 💵</u>
+                <u>200 Jades 💵</u>
               </h5>{" "}
             </h6>
             <button className="btn btn-light">Más información</button>

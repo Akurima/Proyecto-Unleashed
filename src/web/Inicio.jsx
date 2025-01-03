@@ -8,7 +8,7 @@ function App() {
       <div className="container">
         <Header />
       </div>
-      <div className="contenedor-general">
+      <div className="contenedor-general container-fluid">
         <article className="contenedor-servidor">
           <div className="servidor">
             <h3 className="texto-seccion servidor-titulo">
@@ -24,50 +24,27 @@ function App() {
               <br />
             </p>
 
-            <p className="texto-seccion texto-servidor">
-              ◻️ Cinco Grandes Aldeas ◻️ <br /> ◽ Explora y elige tu camino en
-              Konoha, Suna, Iwa o Kumo. Cada aldea tiene su propio estilo,
-              misiones y secretos por descubrir.
-              <br />
-              <br />
-              ◻️ Sistema de Jutsus ◻️
-              <br /> ◽ Aprende y domina poderosas técnicas ninjas como el
-              Rasengan, Chidori, jutsus elementales y muchas más. ¡Cada jutsu
-              tiene sus propias animaciones y efectos especiales!
-              <br />
-              <br /> ◻️ Clanes y Kekkei Genkai ◻️
-              <br /> ◽ Forma parte de clanes legendarios como Uchiha, Hyūga, o
-              Senju. Desbloquea habilidades únicas que te harán destacar en
-              combate.
-              <br />
-              <br />
-              ◻️ Armas Ninjas ◻️
-              <br /> ◽ Equípate con kunais, shurikens, espadas legendarias y
-              herramientas ninja personalizadas para enfrentar a tus enemigos o
-              completar misiones.
-              <br />
-              <br />
-              ◻️ Mundo Abierto Personalizado ◻️
-              <br />
-              ◽ Descubre un mapa fiel al universo de Naruto, lleno de misiones,
-              NPCs, y lugares icónicos como el Valle del Fin o el Monte Myōboku.
-              <br />
-              <br />
-              ◻️ Sistema de Guerra entre Aldeas ◻️
-              <br />
-              ◽ Participa en emocionantes batallas PvP entre aldeas para
-              defender tu territorio o conquistar nuevas zonas estratégicas.
-              <br />
-              <br />
-              ◻️ Misiones y Progresión ◻️
-              <br />
-              ◽ Completa misiones personalizadas para avanzar en tu rango
-              ninja, desde estudiante hasta Hokage. ¡Tu dedicación definirá tu
-              legado!
-              <br />
-              <br /> ◻️ Eventos Especiales ◻️
-              <br />◽ Participa en torneos de chunin, invasiones Akatsuki y
-              otras actividades temáticas con recompensas exclusivas.
+            <p className="texto-inicio texto-servidor">
+              ◻️ Adéntrate en un mundo fielmente inspirado en el universo de
+              Naruto y forja tu camino como ninja legendario. <br />
+              ◻️ Elige entre las Cinco Grandes Aldeas: Konoha, Suna, Iwa o Kumo,
+              cada una con su estilo único, misiones personalizadas y secretos
+              por descubrir. <br />
+              ◻️ Domina el Sistema de Jutsus, aprendiendo técnicas icónicas como
+              el Rasengan, Chidori y jutsus elementales, con impresionantes
+              animaciones y efectos visuales. <br />
+              ◻️ Únete a clanes míticos como Uchiha, Hyūga o Senju y desbloquea
+              poderosos Kekkei Genkai para destacar en combate. <br />
+              ◻️ Explora un Mundo Abierto Personalizado, con locaciones
+              emblemáticas como el Valle del Fin y el Monte Myōboku, lleno de
+              NPCs, misiones y retos. <br />
+              ◻️ Equípate con un arsenal de Armas Ninjas, desde kunais y
+              shurikens hasta espadas legendarias. <br />
+              ◻️ Participa en emocionantes Guerras entre Aldeas y defiende tu
+              territorio en intensas batallas PvP. Progresarás completando
+              Misiones Únicas, ascendiendo desde estudiante hasta Hokage, y
+              participarás en Eventos Especiales como torneos chunin e
+              invasiones de la Akatsuki con recompensas exclusivas.
             </p>
             <img
               className="imagen-info"
@@ -86,13 +63,13 @@ function App() {
           </div>
         </article>
       </div>
-      <div className="contenedor-general">
+      <div className="contenedor-general container-fluid">
         <article className="contenedor-changelogs">
           <div className="changelogs">
             <h3 className="texto-seccion changelogs-titulo">
               🔥 Changelogs • 30/12/24 🔥
             </h3>
-            <p className="texto-seccion texto-changelogs">
+            <p className="texto-inicio texto-changelogs">
               ◽ Cambio 1: Se agrego un aviso y un nuevo horario de HappyHour a
               las 00:30 ARG. <br />
               <br />◽ Cambio 2: Se arregló el bug de los Viajes Rapidos: Mundo,
@@ -109,7 +86,7 @@ function App() {
             </p>
             <img
               className="imagen-changelogs"
-              src="https://media.discordapp.net/attachments/1197225431405973576/1323140905376677968/image.png?ex=6776ba3e&is=677568be&hm=3de6ab4a3c5cb832944ff0424ad6f5be3d868ae6134f7244da0926052c9b7cb9&=&format=webp&quality=lossless"
+              src="/imagenes/changelogs/changelogs.png"
               alt="Imagen Changelogs"
             />
             <button className="btn btn-light">Ver todos los cambios</button>

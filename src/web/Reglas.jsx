@@ -3,13 +3,15 @@ import Footer from "../components/Footer";
 function Reglas() {
   return (
     <>
-      <Header />
-      <div className="reglamento">
+      <div className="container">
+        <Header />
+      </div>
+      <div className="reglamento container-fluid">
         <section className="contenedor-reglamento">
           <h2 className="texto-seccion reglamento-titulo">
             SERVIDOR DE DISCORD: REGLAMENTO
           </h2>
-          <p className="texto-seccion reglas">
+          <p className="texto-inicio reglas">
             1- Respeto Mutuo: Trata a todos los miembros con respeto y cortesía.
             No toleramos el lenguaje ofensivo, discriminación o acoso. <br />
             <br /> 2- Sin Contenido Ofensivo: Evita compartir contenido que
@@ -45,7 +47,7 @@ function Reglas() {
           <h2 className="texto-seccion reglamento-titulo">
             SERVIDOR DE MINECRAFT: REGLAMENTO
           </h2>
-          <p className="texto-seccion reglas">
+          <p className="texto-inicio reglas">
             1- No Griefing: No destruyas ni modifiques las construcciones del
             servidor.
             <br />
@@ -85,20 +87,21 @@ function Reglas() {
           <h2 className="texto-seccion reglamento-titulo">
             NORMATIVAS: EXAMENES CHUNIN
           </h2>
-          <p className="texto-seccion reglas">
-            Herramientas permitidas: Hasta rango C. <br />
+          <p className="texto-inicio reglas">
+            1- Herramientas permitidas: Hasta rango C. <br />
             <br />
-            Jutsus permitidos, todos los de rango Gennin hasta rango B (P2W
+            2- Jutsus permitidos, todos los de rango Gennin hasta rango B (P2W
             claramente prohibido).
             <br />
-            <br /> Herramientas: Solo se podrá utilizar un máximo de 8 vendas,
-            16 unguentos, 10 papeles bomba, 4 bombas de humo en todos los
-            combates, si son revisados y tienen mas que esta cantidad, serán
+            <br />
+            3- Herramientas: Solo se podrá utilizar un máximo de 8 vendas, 16
+            unguentos, 10 papeles bomba, 4 bombas de humo en todos los combates,
+            si son revisados y tienen mas que esta cantidad, serán
             descalificados
           </p>
           <h2 className="texto-seccion reglamento-titulo">REGLAS EXTRAS</h2>
-          <p className="texto-seccion reglas">
-            cualquier transacción de arma legendaria / jutsu, antes de la
+          <p className="texto-inicio reglas">
+            ❗ Cualquier transacción de arma legendaria / jutsu, antes de la
             transferencia de dinero, deberá ser aprobada por administración, por
             lo tanto, deberán abrir un ticket subiendo el trade/transacción
             pendiente de aprobación.
