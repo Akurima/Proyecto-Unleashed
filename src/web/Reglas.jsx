@@ -6,7 +6,7 @@ function Reglas() {
       <div className="container-fluid">
         <Header />
       </div>
-      <div className="reglamento container-fluid">
+      <div id="reglas" className="reglamento container-fluid">
         <section className="contenedor-reglamento">
           <h2 className="texto-seccion reglamento-titulo">
             SERVIDOR DE DISCORD: REGLAMENTO

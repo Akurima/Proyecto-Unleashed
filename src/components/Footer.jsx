@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="container-fluid">
@@ -5,7 +7,9 @@ const Footer = () => {
         <div className="footer-item">
           <h3>Reglas</h3>
           <p>Lee nuestro reglamento del servidor. </p>
-          <p>¡Click aqui!</p>
+          <Link to="/Reglamento">
+            <p>¡Click aqui!</p>
+          </Link>
         </div>
         <div className="footer-item">
           <h3>Terminos</h3>
@@ -32,7 +36,7 @@ const Footer = () => {
         {" "}
         Todos los derechos reservados - Naruto: Unleashed Legends | 2025 <br />
       </span>
-      <span className="span-footer">
+      <span className="span-footer span-akurima">
         Sitio web desarrollado por <a href="">Akurima.</a>
       </span>
     </footer>

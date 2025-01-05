@@ -58,12 +58,12 @@ function App() {
             />
             <div className="contenedor-texto-changelogs">
               <p className="texto-inicio texto-servidor">
-                ¡Únete Ahora! Conviértete en el ninja que siempre soñaste ser y
-                escribe tu propia historia en Naruto Shinobi Realms. Ya sea que
-                prefieras proteger tu aldea, aprender los jutsus más raros o
-                simplemente explorar este increíble mundo, este servidor tiene
-                un lugar para ti. ¡Prepárate para vivir la verdadera experiencia
-                shinobi! 🌟
+                ¡Únete Ahora! <br />
+                Conviértete en el ninja que siempre soñaste ser y escribe tu
+                propia historia en Naruto Shinobi Realms. Ya sea que prefieras
+                proteger tu aldea, aprender los jutsus más raros o simplemente
+                explorar este increíble mundo, este servidor tiene un lugar para
+                ti. ¡Prepárate para vivir la verdadera experiencia shinobi! 🌟
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ function App() {
         <div className="contenendor-inicio-general">
           <section className="contenedor-iframe">
             <h2 className="texto-seccion changelogs-titulo">
-              ¿Ya visitaste nuestro último video?
+              ¿Ya viste nuestro último video?
             </h2>
             <iframe
               className="frame-inicio"
