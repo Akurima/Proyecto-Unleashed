@@ -704,27 +704,51 @@ footer a:hover {
 
 .contenedor-changelogs {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 16px;
+  margin-top: 20px;
+  padding: 35px 20px;
   height: auto;
-  max-width: 90%;
-  width: 1700px;
+  max-width: 100%;
+  width: 95%;
   border: 2px solid #fd8412;
   border-radius: 10px;
   position: relative;
-  margin: 20px auto;
   background: linear-gradient(145deg, #222, #333);
   opacity: 0;
   transform: translateY(20px);
   animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
-
-  /* Efecto neón suave */
   box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
     0 0 40px rgba(253, 132, 18, 0.1);
+}
+
+.fila-changelogs {
+  display: flex;
+  flex-direction: row; /* Elementos en fila */
+  justify-content: space-between; /* Espaciado uniforme */
+  gap: 20px; /* Espaciado entre ChangeLogs */
+  padding: 0 20px; /* Espaciado lateral para bordes */
+  width: 100%;
+  max-width: 1700px; /* Limitar el ancho */
+  margin: 0 auto; /* Centrar en la pantalla */
+}
+
+.changelogs {
+  flex: 1; /* Permitir que se ajusten uniformemente */
+  max-width: calc(50% - 20px); /* Resta el gap para que ambos encajen */
+  padding: 15px;
+  border: 2px solid #fd8412;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-texto-changelogs {
+  margin-bottom: 10px;
 }
 
 .contenedor-changelogs:hover {
@@ -773,12 +797,17 @@ footer a:hover {
   border-radius: 2px;
 }
 
+.changelogs {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Estilo para las imágenes */
 .imagen-changelogs {
   margin-bottom: 25px;
-  width: 950px;
-  height: 500px;
+  max-width: 100%;
   border-radius: 10px;
+  height: 500px;
   border: 2px solid #fd8412; /* Agrega bordes a las imágenes */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   object-fit: cover;
@@ -800,6 +829,11 @@ footer a:hover {
   width: 90%;
   border-bottom: 2px solid #fd8412;
   padding-bottom: 8px;
+}
+
+.changelogs-titulo,
+.texto-changelogs {
+  margin-bottom: 10px;
 }
 
 /* Texto interno */

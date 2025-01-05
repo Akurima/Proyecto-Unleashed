@@ -70,37 +70,70 @@ function App() {
         </article>
       </div>
       <div className="contenedor-general container-fluid">
-        <article className="contenedor-changelogs">
-          <div className="changelogs">
-            <div className="contenedor-texto-changelogs">
-              <h3 className="texto-seccion changelogs-titulo">
-                🔥 Changelogs • 04/01/25 🔥
-              </h3>
+        {/* Contenedor de los Changelogs */}
+        <div className="contenedor-general container-fluid">
+          {/* Contenedor de los Changelogs */}
+          <article className="contenedor-changelogs">
+            <h2 className="texto-seccion changelogs-titulo">
+              ¡Mira nuestros últimos cambios!
+            </h2>
+            <div className="fila-changelogs">
+              <div className="changelogs">
+                <div className="contenedor-texto-changelogs">
+                  <h3 className="texto-seccion changelogs-titulo">
+                    🔥 Changelogs • 04/01/25 🔥
+                  </h3>
+                </div>
+                <div className="contenedor-texto-changelogs">
+                  <p className="texto-inicio texto-changelogs">
+                    ◽ Se buffeó el Jutsu de Temporada: Tiburón Hambriento.{" "}
+                    <br />
+                    Se redujo su consumo de chakra (100 → 70) | 2: Se redujo su
+                    enfriamiento.
+                    <br />
+                    <br />◽ Cambio 2: ¡Se agregó un agente inmobiliario! Podrás
+                    encontrarlo en el Mundo Espiritual (Spawn).
+                    <br />
+                    <br />◽ Cambio 3: Se agregó un anuncio de evento cuando un
+                    KOTH esté activo.
+                    <br />
+                    <br />◽ Cambio 4: Se agregaron las coordenadas del KOTH
+                    Activo al TAB.
+                  </p>
+                </div>
+                <div className="contenedor-imagen-changelogs">
+                  <img
+                    className="imagen-changelogs"
+                    src="/imagenes/changelogs/changelogs.png"
+                    alt="Imagen Changelogs"
+                  />
+                </div>
+              </div>
+              <div className="changelogs">
+                <div className="contenedor-texto-changelogs">
+                  <h3 className="texto-seccion changelogs-titulo">
+                    🔥 Changelogs • FECHA 🔥
+                  </h3>
+                </div>
+                <div className="contenedor-texto-changelogs">
+                  <p className="texto-inicio texto-changelogs">
+                    ◽ Changelogs Descripcion
+                  </p>
+                </div>
+                <div className="contenedor-imagen-changelogs">
+                  <img
+                    className="imagen-changelogs"
+                    src="https://media.tenor.com/yEG23sxXIVQAAAAM/shrek-shrek-meme.gif"
+                    alt="Imagen Changelogs"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="contenedor-texto-changelogs">
-              <p className="texto-inicio texto-changelogs">
-                ◽ Se buffeó el Jutsu de Temporada: Tiburón Hambriento. <br />{" "}
-                Se redujo su consumo de chakra (100 → 70) | 2: Se redujo su
-                enfriamiento.
-                <br />
-                <br />◽ Cambio 2: ¡Se agrego un agente inmobiliario! Podrás
-                encontrarlo en el Mundo Espiritual (Spawn).
-                <br />
-                <br />◽ Cambio 3: Se agregó un anuncio de evento cuando un KOTH
-                esté activo.
-                <br />
-                <br />◽ Cambio 4: Se agregaron las coordenadas del KOTH Activo
-                al TAB.
-              </p>
-            </div>
-            <img
-              className="imagen-changelogs"
-              src="/imagenes/changelogs/changelogs.png"
-              alt="Imagen Changelogs"
-            />
-          </div>
-        </article>
-        <div className="contenendor-inicio-general">
+          </article>
+        </div>
+
+        {/* Contenedor del Iframe */}
+        <div className="contenedor-inicio-general">
           <section className="contenedor-iframe">
             <h2 className="texto-seccion changelogs-titulo">
               ¿Ya viste nuestro último video?
@@ -115,7 +148,7 @@ function App() {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </section>
         </div>
