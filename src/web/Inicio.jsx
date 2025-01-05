@@ -5,7 +5,7 @@ import Header from "../components/Header";
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <Header />
       </div>
       <div className="contenedor-general container-fluid">
@@ -17,14 +17,12 @@ function App() {
               </h3>
             </div>
             <div className="contenedor-texto-changelogs">
-              <p className="texto-seccion texto-servidor1">
-                ¡Bienvenido a Naruto Unleashed Legends! Un servidor único de
-                Minecraft ambientado en el fascinante mundo de Naruto. Aquí
-                podrás sumergirte en una experiencia ninja como nunca antes,
-                donde la creatividad de Minecraft se mezcla con la esencia del
-                universo shinobi.
-                <br />
-                <br />
+              <p className="texto-inicio texto-servidor1">
+                ¡Bienvenido a Naruto Unleashed Legends! <br />
+                Un servidor único de Minecraft ambientado en el fascinante mundo
+                de Naruto. Aquí podrás sumergirte en una experiencia ninja como
+                nunca antes, donde la creatividad de Minecraft se mezcla con la
+                esencia del universo shinobi.
               </p>
             </div>
 
@@ -59,14 +57,13 @@ function App() {
               alt="Imagen Changelogs"
             />
             <div className="contenedor-texto-changelogs">
-              <p className="texto-seccion texto-servidor">
+              <p className="texto-inicio texto-servidor">
                 ¡Únete Ahora! Conviértete en el ninja que siempre soñaste ser y
                 escribe tu propia historia en Naruto Shinobi Realms. Ya sea que
                 prefieras proteger tu aldea, aprender los jutsus más raros o
                 simplemente explorar este increíble mundo, este servidor tiene
                 un lugar para ti. ¡Prepárate para vivir la verdadera experiencia
                 shinobi! 🌟
-                <br /> <br />
               </p>
             </div>
           </div>
@@ -77,24 +74,23 @@ function App() {
           <div className="changelogs">
             <div className="contenedor-texto-changelogs">
               <h3 className="texto-seccion changelogs-titulo">
-                🔥 Changelogs • 30/12/24 🔥
+                🔥 Changelogs • 04/01/25 🔥
               </h3>
             </div>
             <div className="contenedor-texto-changelogs">
               <p className="texto-inicio texto-changelogs">
-                ◽ Cambio 1: Se agrego un aviso y un nuevo horario de HappyHour
-                a las 00:30 ARG. <br />
-                <br />◽ Cambio 2: Se arregló el bug de los Viajes Rapidos:
-                Mundo, que no teletransportaba y aun así consumía voluntad.
+                ◽ Se buffeó el Jutsu de Temporada: Tiburón Hambriento. <br />{" "}
+                Se redujo su consumo de chakra (100 → 70) | 2: Se redujo su
+                enfriamiento.
                 <br />
-                <br />◽ Cambio 3: ¡Se agregó el sistema de KOTHS! Muy pronto se
-                implementará diversos Koths en cada país.
+                <br />◽ Cambio 2: ¡Se agrego un agente inmobiliario! Podrás
+                encontrarlo en el Mundo Espiritual (Spawn).
                 <br />
-                <br />◽ Cambio 4: Se arregló el causante del lag del arma
-                Bastón:Control de agua.
+                <br />◽ Cambio 3: Se agregó un anuncio de evento cuando un KOTH
+                esté activo.
                 <br />
-                <br />◽ Cambio 5: Reducción de particulas a jutsus que causaban
-                lag...
+                <br />◽ Cambio 4:Se agregaron las coordenadas del KOTH Activo
+                al TAB.
               </p>
             </div>
             <img
@@ -102,11 +98,13 @@ function App() {
               src="/imagenes/changelogs/changelogs.png"
               alt="Imagen Changelogs"
             />
-            <button className="btn btn-light">Ver todos los cambios</button>
           </div>
         </article>
         <div className="contenendor-inicio-general">
-          <section className="contenedor-changelogs">
+          <section className="contenedor-iframe">
+            <h2 className="texto-seccion changelogs-titulo">
+              ¿Ya visitaste nuestro último video?
+            </h2>
             <iframe
               className="frame-inicio"
               width="98%"

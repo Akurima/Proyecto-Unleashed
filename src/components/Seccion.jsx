@@ -2,7 +2,7 @@ function Seccion({ titulo, descripcion, link }) {
   return (
     <section className="Seccion">
       <img className="imagen-seccion" src={link} alt="Imagen" />
-      <h2 className="texto-seccion">{titulo}</h2>
+      <h2 className="texto-seccion searchable">{titulo}</h2>
       <p className="texto-seccion">{descripcion}</p>
       <button className="btn btn-light">Saber más...</button>
     </section>

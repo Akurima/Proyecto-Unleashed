@@ -283,11 +283,14 @@ footer a:hover {
   opacity: 0;
   transform: translateY(20px);
   animation: slideIn 0.6s ease-out forwards;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .Seccion:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
 }
 
 .Seccion::before {
@@ -390,11 +393,14 @@ footer a:hover {
   animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-carta:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
 }
 
 .contenedor-carta::before {
@@ -454,7 +460,7 @@ footer a:hover {
   text-align: center;
   padding: 16px; /* Aumento de padding para mayor separación */
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: 930px;
+  height: 1000px;
   width: 640px;
   display: flex;
   align-items: center;
@@ -470,11 +476,14 @@ footer a:hover {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
   flex-grow: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-reglamento:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Sombra al pasar el cursor */
-  transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
 }
 
 /* Fondo oscuro interno y borde redondeado */
@@ -528,7 +537,7 @@ footer a:hover {
 }
 
 .reglas {
-  width: 100%;
+  width: 97%;
   text-align: left;
   padding: 16px;
   font-size: 17px;
@@ -566,6 +575,7 @@ footer a:hover {
 .contenedor-general {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .contenedor-servidor {
@@ -573,25 +583,28 @@ footer a:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 16px; /* Aumento de padding para mayor separación */
+  padding: 16px;
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
   height: 1620px;
-  width: 100%;
+  width: 98%;
   border: 2px solid #fd8412; /* Bordes visibles */
-  border-radius: 10px; /* Bordes redondeados */
+  border-radius: 10px;
   position: relative;
-  margin: 20px auto; /* Centrado y margen superior */
-  background: linear-gradient(145deg, #222, #333); /* Fondo con degradado */
+  margin: 20px auto;
+  background: linear-gradient(145deg, #222, #333);
   opacity: 0;
   transform: translateY(20px);
-  animation: slideIn 0.6s ease-out forwards; /* Animación de entrada */
+  animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-servidor:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Sombra al pasar el cursor */
-  transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px);
 }
 
 /* Fondo oscuro interno y borde redondeado */
@@ -678,17 +691,16 @@ footer a:hover {
   }
 }
 
-/* Estilo principal para el contenedor de changelogs */
 .contenedor-changelogs {
   display: flex;
-  flex-direction: row; /* Mejor organización vertical */
+  flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 16px;
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-  height: 1000px;
-  width: 920px;
-  border: 2px solid #fd8412; /* Bordes visibles */
+  height: auto;
+  max-width: 90%;
+  width: 1500px;
+  border: 2px solid #fd8412;
   border-radius: 10px;
   position: relative;
   margin: 20px auto;
@@ -698,19 +710,23 @@ footer a:hover {
   animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
-}
 
-.contenedor-texto-changelogs {
-  display: flex;
-  justify-content: center;
+  /* Efecto neón suave */
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-changelogs:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
+}
+.contenedor-texto-changelogs {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-/* Fondo interno oscuro y borde en el contenedor principal */
 .contenedor-changelogs::before {
   content: "";
   position: absolute;
@@ -749,10 +765,12 @@ footer a:hover {
 /* Estilo para las imágenes */
 .imagen-changelogs {
   margin-bottom: 25px;
-  width: 90%;
+  width: 950px;
+  height: 500px;
   border-radius: 10px;
   border: 2px solid #fd8412; /* Agrega bordes a las imágenes */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
 }
 
 .imagen-changelogs:hover {
@@ -857,17 +875,79 @@ footer a:hover {
   pointer-events: none;
 }
 
+.contenedor-iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  height: 1000px;
+  max-width: 95%;
+  width: 95%;
+  border: 2px solid #fd8412;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px auto;
+  background: linear-gradient(145deg, #222, #333);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.6s ease-out forwards;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
+}
+
+.contenedor-texto-iframe {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-iframe:hover {
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
+}
+
+.contenedor-iframe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.contenedor-iframe::after {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
+  background: rgba(83, 82, 82, 0.4);
+  border-radius: 10px;
+  z-index: -1;
+  pointer-events: none;
+}
+
 /* Estilo para el iframe */
 .frame-inicio {
-  margin: 8px;
-  width: 98%;
-  height: 98%;
+  margin: 20px;
+  width: 93%;
+  height: 95%;
   border-radius: 30px; /* Bordes redondeados */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos al pasar el cursor */
+  transition: transform 1s ease, box-shadow 1s ease; /* Efectos al pasar el cursor */
 }
 
 .frame-inicio:hover {
-  transform: scale(1.05); /* Efecto de zoom */
+  transform: scale(1.02); /* Efecto de zoom */
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Sombra al pasar el cursor */
 }
 
@@ -889,10 +969,9 @@ footer a:hover {
   align-items: center;
   text-align: center;
   padding: 8px;
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
   height: 500px;
   width: 800px;
-  border-radius: 2%;
+  border-radius: 5%;
   position: relative;
   margin: 8px auto;
   opacity: 0;
@@ -900,6 +979,8 @@ footer a:hover {
   animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-discord {
@@ -912,8 +993,9 @@ footer a:hover {
 }
 
 .seccion-discord:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
 }
 
 .seccion-discord::before {
@@ -1001,11 +1083,14 @@ footer a:hover {
   animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-estado:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
 }
 
 .contenedor-estado::before {
@@ -1071,11 +1156,14 @@ footer a:hover {
   animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-eventos:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
 }
 
 .contenedor-eventos::before {
@@ -1127,11 +1215,14 @@ footer a:hover {
   animation: slideIn 0.6s ease-out forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   z-index: 1;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2),
+    0 0 40px rgba(253, 132, 18, 0.1);
 }
 
 .contenedor-temporada:hover {
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
-  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0, 0.3),
+    0 0 50px rgba(253, 132, 18, 0.2);
+  transform: translateY(-5px); /* Leve elevación al hover */
 }
 
 .contenedor-temporada::before {
@@ -1171,4 +1262,97 @@ footer a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 8px;
+  border: 2px solid #fd8412;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(253, 132, 18, 0.3), 0 0 20px rgba(254, 202, 0, 0.2);
+  background: #222;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-container:hover {
+  box-shadow: 0 0 15px rgba(253, 132, 18, 0.5), 0 0 30px rgba(254, 202, 0.3);
+}
+
+/* Campo de entrada */
+.search-input {
+  flex: 1;
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: #feca00;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-shadow: 0 0 5px rgba(254, 202, 0, 0.8);
+}
+
+/* Botón de búsqueda */
+.search-button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background: #fd8412;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search-button:hover {
+  background: #feca00;
+  transform: scale(1.1);
+}
+
+/* Estilo para resultados resaltados */
+.highlight {
+  background-color: rgba(254, 202, 0, 0.6);
+  color: #222;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Estilo de la barra de búsqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  width: 250px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: #fd8412;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #f96f02;
+}
+
+/* Resultados de búsqueda */
+.search-results {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #feca00;
+  font-weight: bold;
 }

@@ -21,7 +21,7 @@ function Discord() {
       <section className="seccion-discord container">
         <div className="contenedor-discord">
           <div className="texto-seccion">
-            <h3 className="texto-servidor">
+            <h3 className="texto-servidor searchable">
               ¡Ingresa ahora a nuestra comunidad de Discord!
             </h3>
             <a
