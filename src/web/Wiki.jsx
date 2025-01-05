@@ -5,7 +5,7 @@ import Seccion from "../components/Seccion";
 function Wiki() {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <Header />
       </div>
       <div className="container ">
