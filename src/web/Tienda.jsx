@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 function Tienda() {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <Header />
       </div>
       <div className="container">

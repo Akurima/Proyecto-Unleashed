@@ -15,7 +15,7 @@ function Discord() {
 
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <Header />
       </div>
       <section className="seccion-discord container">

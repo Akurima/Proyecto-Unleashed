@@ -89,7 +89,7 @@ function App() {
                 <br />◽ Cambio 3: Se agregó un anuncio de evento cuando un KOTH
                 esté activo.
                 <br />
-                <br />◽ Cambio 4:Se agregaron las coordenadas del KOTH Activo
+                <br />◽ Cambio 4: Se agregaron las coordenadas del KOTH Activo
                 al TAB.
               </p>
             </div>

@@ -56,7 +56,7 @@ function Eventos() {
 
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <Header />
       </div>
       <section className="container contenedor-eventos">

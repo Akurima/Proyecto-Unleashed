@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 function Temporada() {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <Header />
       </div>
 
